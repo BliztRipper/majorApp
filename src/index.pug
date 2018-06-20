@@ -1,0 +1,32 @@
+extends _template
+block body
+  header
+    .container.d-flex.justify-content-center.p-4
+      button.btn.btn-outline-dark.px-4
+        i.fas.fa-th(style='color:#b0b5b9; margin-right:1rem;') 
+        |ดูภาพยนต์ทั้งหมด
+  #movie-carousel
+    figure
+      .container
+        img(src="images/incredibles.jpg", alt="The incredibles 2").d-block.mx-auto.poster
+        .d-flex.justify-content-center.py-4
+          button.btn.booking-btn ซื้อตั๋ว                    
+    figure
+      .container
+        img(src="images/jurassic-world-2-poster.jpg", alt="jurassic world 2").d-block.mx-auto.poster
+        .d-flex.justify-content-center.py-4
+          button.btn.booking-btn ซื้อตั๋ว                    
+  footer.navbar-nav.navbar-bottom.fixed-bottom
+    .container-fluid
+      .row.text-center.py-3
+        .col.p-0.d-flex.flex-column
+          i.fas.fa-film
+          |ภาพยนต์
+        .col.p-0.d-flex.flex-column 
+          i.fas.fa-map-marker
+          |โรงภาพยนต์
+        .col.p-0.d-flex.flex-column 
+          i.fas.fa-ticket-alt
+          |ตั๋วหนัง
+
+
