@@ -24,6 +24,9 @@ body{
   color:#fff;
   width: 90%;
   height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-bottom{
@@ -39,7 +42,7 @@ body{
 .movie-detail{
   padding-top: 24px;
   &__title{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   &__sec-title{
     font-size: 14px;
