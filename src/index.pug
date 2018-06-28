@@ -1,54 +1,71 @@
 extends _template
 block body
-  header
-    .container.d-flex.justify-content-center.p-4
-      button.btn.btn-outline-dark.px-4
-        i.fas.fa-th(style='color:#b0b5b9; margin-right:1rem;') 
-        |ดูภาพยนต์ทั้งหมด
-  #movie-carousel
-    figure
-      .container
-        img(src="images/incredibles.jpg", alt="The incredibles 2").d-block.mx-auto.poster
-        .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
-          a.btn.booking-btn(href='') ซื้อตั๋ว
-          h2.pt-2.movie-detail__title  Incredibles 2
-          h5.movie-detail__sec-title  รวมเหล่ายอดคนพิทักษ์โลก 2
-          span.movie-detail__genre  Comedy                   
-    figure
-      .container
-        img(src="images/jurassic-world-2-poster.jpg", alt="jurassic world 2").d-block.mx-auto.poster
-        .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
-          a.btn.booking-btn(href='') ซื้อตั๋ว   
-          h2.pt-2.movie-detail__title Jurassic World 2
-          h5.movie-detail__sec-title จูราสสิค เวิลด์ 2 อาณาจักรล่มสลาย
-          span.movie-detail__genre Action                   
-    figure
-      .container
-        img(src="images/wir2.jpg", alt="wreck it ralph 2").d-block.mx-auto.poster
-        .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
-          a.btn.booking-btn(href='') ซื้อตั๋ว                    
-          h2.pt-2.movie-detail__title WRECK IT RALPH 2
-          h5.movie-detail__sec-title วายร้ายหัวใจฮีโร่ 2 ราล์ฟตะลุยโลกอินเตอร์เน็ต
-          span.movie-detail__genre Comedy 
-    figure
-      .container
-        img(src="images/prauma.jpg", alt="เพรชพระอุมา").d-block.mx-auto.poster
-        .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
-          a.btn.booking-btn(href='') ซื้อตั๋ว
-          h2.pt-2.movie-detail__title Petch Pra Uma
-          h5.movie-detail__sec-title เพชรพระอุมา
-          span.movie-detail__genre Action, Adventure                   
-  footer.navbar-nav.navbar-bottom.fixed-bottom
-    .container-fluid
-      .row.text-center
-        .col.py-2.d-flex.flex-column(style='border-top: 3px solid #ff8200; ')
-          i.fas.fa-film
-          |ภาพยนต์
-        .col.py-2.d-flex.flex-column 
-          i.fas.fa-map-marker
-          |โรงภาพยนต์ 
-        .col.py-2.d-flex.flex-column 
-          i.fas.fa-ticket-alt
-          |ตั๋วหนัง
+  #movie-index.tabcontent
+    header
+      .container.d-flex.justify-content-center.p-4
+        a(href='')
+          button.btn.btn-outline-dark.px-4
+            i.fas.fa-th(style='color:#b0b5b9; margin-right:1rem;') 
+            |ดูภาพยนต์ทั้งหมด
+    #movie-carousel
+      figure
+        .container
+          img(src="images/incredibles.jpg", alt="The incredibles 2").d-block.mx-auto.poster
+          .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
+            a.btn.booking-btn(href='showing-time.html') ซื้อตั๋ว
+            h2.pt-2.movie-detail__title  Incredibles 2
+            h5.movie-detail__sec-title  รวมเหล่ายอดคนพิทักษ์โลก 2
+            span.movie-detail__genre  Comedy                   
+      figure
+        .container
+          img(src="images/jurassic-world-2-poster.jpg", alt="jurassic world 2").d-block.mx-auto.poster
+          .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
+            a.btn.booking-btn(href='showing-time.html') ซื้อตั๋ว   
+            h2.pt-2.movie-detail__title Jurassic World 2
+            h5.movie-detail__sec-title จูราสสิค เวิลด์ 2 อาณาจักรล่มสลาย
+            span.movie-detail__genre Action                   
+      figure
+        .container
+          img(src="images/wir2.jpg", alt="wreck it ralph 2").d-block.mx-auto.poster
+          .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
+            a.btn.booking-btn(href='showing-time.html') ซื้อตั๋ว                    
+            h2.pt-2.movie-detail__title WRECK IT RALPH 2
+            h5.movie-detail__sec-title วายร้ายหัวใจฮีโร่ 2 ราล์ฟตะลุยโลกอินเตอร์เน็ต
+            span.movie-detail__genre Comedy 
+      figure
+        .container
+          img(src="images/prauma.jpg", alt="เพรชพระอุมา").d-block.mx-auto.poster
+          .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
+            a.btn.booking-btn(href='showing-time.html') ซื้อตั๋ว
+            h2.pt-2.movie-detail__title Petch Pra Uma
+            h5.movie-detail__sec-title เพชรพระอุมา
+            span.movie-detail__genre Action, Adventure            
+  #cinema-index.tabcontent(style='display:none;')
+    a(href='')
+      .card
+        .card-body.d-flex.align-items-center
+          img(src="images/quartier-cineart.png", alt="" height='72')
+          .card-title ควอเทียร์ ซีเนอาร์ต
+    a(href='')
+      .card.mt-3
+        .card-body.d-flex.align-items-center
+          img(src="images/paragoncine.jpg", alt="" height='72')
+          .card-title พารากอน ซีนีเพล็ก
+    a(href='')
+      .card.mt-3
+        .card-body.d-flex.align-items-center
+          img(src="images/Majorcineplexlogo.png", alt="" height='72')
+          .card-title.pl-2 เมเจอร์ซีนีเพล็ก
+  .nav-tabs.navbar-nav.navbar-bottom.fixed-bottom
+    .row.text-center
+      .col.py-2.d-flex.flex-column.tablinks#movie-tab(style='border-top: 3px solid #ff8200;'  onclick="navToggle(event, 'movie-index')")
+        i.fas.fa-film
+        |ภาพยนต์
+      .col.py-2.d-flex.flex-column.tablinks#cinema-tab(onclick="navToggle(event, 'cinema-index')")
+        i.fas.fa-map-marker
+        |โรงภาพยนต์ 
+      .col.py-2.d-flex.flex-column#ticket-tab
+        i.fas.fa-ticket-alt
+        |ตั๋วหนัง
 
 

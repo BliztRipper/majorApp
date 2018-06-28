@@ -24,62 +24,69 @@
     <meta property="og:image" content="og-image.jpg"/>
   </head>
   <body>
-    <header>
-      <div class="container d-flex justify-content-center p-4">
-        <button class="btn btn-outline-dark px-4"><i class="fas fa-th" style="color:#b0b5b9; margin-right:1rem;"> </i>ดูภาพยนต์ทั้งหมด</button>
+    <div class="tabcontent" id="movie-index">
+      <header>
+        <div class="container d-flex justify-content-center p-4"><a href="">
+            <button class="btn btn-outline-dark px-4"><i class="fas fa-th" style="color:#b0b5b9; margin-right:1rem;"> </i>ดูภาพยนต์ทั้งหมด</button></a></div>
+      </header>
+      <div id="movie-carousel">
+        <figure>
+          <div class="container"><img class="d-block mx-auto poster" src="images/incredibles.jpg" alt="The incredibles 2"/>
+            <div class="d-flex justify-content-center align-items-center flex-column movie-detail"><a class="btn booking-btn" href="showing-time.html">ซื้อตั๋ว</a>
+              <h2 class="pt-2 movie-detail__title"> Incredibles 2</h2>
+              <h5 class="movie-detail__sec-title"> รวมเหล่ายอดคนพิทักษ์โลก 2</h5><span class="movie-detail__genre"> Comedy                   </span>
+            </div>
+          </div>
+        </figure>
+        <figure>
+          <div class="container"><img class="d-block mx-auto poster" src="images/jurassic-world-2-poster.jpg" alt="jurassic world 2"/>
+            <div class="d-flex justify-content-center align-items-center flex-column movie-detail"><a class="btn booking-btn" href="showing-time.html">ซื้อตั๋ว   </a>
+              <h2 class="pt-2 movie-detail__title">Jurassic World 2</h2>
+              <h5 class="movie-detail__sec-title">จูราสสิค เวิลด์ 2 อาณาจักรล่มสลาย</h5><span class="movie-detail__genre">Action                   </span>
+            </div>
+          </div>
+        </figure>
+        <figure>
+          <div class="container"><img class="d-block mx-auto poster" src="images/wir2.jpg" alt="wreck it ralph 2"/>
+            <div class="d-flex justify-content-center align-items-center flex-column movie-detail"><a class="btn booking-btn" href="showing-time.html">ซื้อตั๋ว                    </a>
+              <h2 class="pt-2 movie-detail__title">WRECK IT RALPH 2</h2>
+              <h5 class="movie-detail__sec-title">วายร้ายหัวใจฮีโร่ 2 ราล์ฟตะลุยโลกอินเตอร์เน็ต</h5><span class="movie-detail__genre">Comedy </span>
+            </div>
+          </div>
+        </figure>
+        <figure>
+          <div class="container"><img class="d-block mx-auto poster" src="images/prauma.jpg" alt="เพรชพระอุมา"/>
+            <div class="d-flex justify-content-center align-items-center flex-column movie-detail"><a class="btn booking-btn" href="showing-time.html">ซื้อตั๋ว</a>
+              <h2 class="pt-2 movie-detail__title">Petch Pra Uma</h2>
+              <h5 class="movie-detail__sec-title">เพชรพระอุมา</h5><span class="movie-detail__genre">Action, Adventure            </span>
+            </div>
+          </div>
+        </figure>
       </div>
-    </header>
-    <div id="movie-carousel">
-      <figure>
-        <div class="container"><img class="d-block mx-auto poster" src="images/incredibles.jpg" alt="The incredibles 2"/>
-          <div class="d-flex justify-content-center align-items-center flex-column movie-detail"><a class="btn booking-btn" href="">ซื้อตั๋ว</a>
-            <h2 class="pt-2 movie-detail__title"> Incredibles 2</h2>
-            <h5 class="movie-detail__sec-title"> รวมเหล่ายอดคนพิทักษ์โลก 2</h5><span class="movie-detail__genre"> Comedy                   </span>
-          </div>
-        </div>
-      </figure>
-      <figure>
-        <div class="container"><img class="d-block mx-auto poster" src="images/jurassic-world-2-poster.jpg" alt="jurassic world 2"/>
-          <div class="d-flex justify-content-center align-items-center flex-column movie-detail"><a class="btn booking-btn" href="">ซื้อตั๋ว   </a>
-            <h2 class="pt-2 movie-detail__title">Jurassic World 2</h2>
-            <h5 class="movie-detail__sec-title">จูราสสิค เวิลด์ 2 อาณาจักรล่มสลาย</h5><span class="movie-detail__genre">Action                   </span>
-          </div>
-        </div>
-      </figure>
-      <figure>
-        <div class="container"><img class="d-block mx-auto poster" src="images/wir2.jpg" alt="wreck it ralph 2"/>
-          <div class="d-flex justify-content-center align-items-center flex-column movie-detail"><a class="btn booking-btn" href="">ซื้อตั๋ว                    </a>
-            <h2 class="pt-2 movie-detail__title">WRECK IT RALPH 2</h2>
-            <h5 class="movie-detail__sec-title">วายร้ายหัวใจฮีโร่ 2 ราล์ฟตะลุยโลกอินเตอร์เน็ต</h5><span class="movie-detail__genre">Comedy </span>
-          </div>
-        </div>
-      </figure>
-      <figure>
-        <div class="container"><img class="d-block mx-auto poster" src="images/prauma.jpg" alt="เพรชพระอุมา"/>
-          <div class="d-flex justify-content-center align-items-center flex-column movie-detail"><a class="btn booking-btn" href="">ซื้อตั๋ว</a>
-            <h2 class="pt-2 movie-detail__title">Petch Pra Uma</h2>
-            <h5 class="movie-detail__sec-title">เพชรพระอุมา</h5><span class="movie-detail__genre">Action, Adventure                   </span>
-          </div>
-        </div>
-      </figure>
     </div>
-    <footer class="navbar-nav navbar-bottom fixed-bottom">
-      <div class="container-fluid">
-        <div class="row text-center">
-          <div class="col py-2 d-flex flex-column" style="border-top: 3px solid #ff8200; "><i class="fas fa-film"></i>ภาพยนต์</div>
-          <div class="col py-2 d-flex flex-column"> <i class="fas fa-map-marker"></i>โรงภาพยนต์ </div>
-          <div class="col py-2 d-flex flex-column"> <i class="fas fa-ticket-alt"></i>ตั๋วหนัง</div>
-        </div>
+    <div class="tabcontent" id="cinema-index" style="display:none;"><a href="">
+        <div class="card">
+          <div class="card-body d-flex align-items-center"><img src="images/quartier-cineart.png" alt="" height="72"/>
+            <div class="card-title">ควอเทียร์ ซีเนอาร์ต</div>
+          </div>
+        </div></a><a href="">
+        <div class="card mt-3">
+          <div class="card-body d-flex align-items-center"><img src="images/paragoncine.jpg" alt="" height="72"/>
+            <div class="card-title">พารากอน ซีนีเพล็ก</div>
+          </div>
+        </div></a><a href="">
+        <div class="card mt-3">
+          <div class="card-body d-flex align-items-center"><img src="images/Majorcineplexlogo.png" alt="" height="72"/>
+            <div class="card-title pl-2">เมเจอร์ซีนีเพล็ก</div>
+          </div>
+        </div></a></div>
+    <div class="nav-tabs navbar-nav navbar-bottom fixed-bottom">
+      <div class="row text-center">
+        <div class="col py-2 d-flex flex-column tablinks" id="movie-tab" style="border-top: 3px solid #ff8200;" onclick="navToggle(event, 'movie-index')"><i class="fas fa-film"></i>ภาพยนต์</div>
+        <div class="col py-2 d-flex flex-column tablinks" id="cinema-tab" onclick="navToggle(event, 'cinema-index')"><i class="fas fa-map-marker"></i>โรงภาพยนต์ </div>
+        <div class="col py-2 d-flex flex-column" id="ticket-tab"><i class="fas fa-ticket-alt"></i>ตั๋วหนัง</div>
       </div>
-    </footer>
+    </div>
     <script src="main.js" async="async"></script>
-    <script>
-      if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js')
-        .then(function() {
-          console.log('Service Worker Registered');
-        });
-      }
-    </script>
   </body>
 </html>

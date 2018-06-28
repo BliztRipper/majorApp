@@ -8,7 +8,31 @@ $('#movie-carousel').slick({
   infinite: false,
   speed: 300,
   slidesToShow: 1,
-  adaptiveHeight: true,
   centerMode: true,
-  variableWidth: true
+  variableWidth: true,
 });
+
+$(document).ready(function(){
+  $('.col.py-2.d-flex.flex-column').click(function(e){
+    $('.col.py-2.d-flex.flex-column').css("border-top","")
+    $(this).css({'border-top': '3px solid #ff8200'})
+  })
+})
+
+function navToggle(evt, mainTab) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(mainTab).style.display = "block";
+  evt.currentTarget.className += " active";
+}
