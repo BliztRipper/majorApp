@@ -14,8 +14,9 @@ body{
     background-position: center;
     background-size: cover;
     z-index: -1;
-    height: 812px;
   }
+  height: 100vh;
+  overflow: hidden;
 }
 
 .booking-btn{
@@ -56,4 +57,21 @@ body{
   padding: 4px 16px;
   border-radius: 4px;
   color:#ff8200;
+}
+.seat-title{
+  background-color:#fff;
+  font-size: 1.5rem;
+}
+
+.proceed-btn{
+  background-color: #ff8200;
+  color:#fff;
+  font-size: 1.25rem;
+}
+.seat-selected{
+  color:#000;
+}
+.seat-price {
+  font-weight: bold;
+  color:#000;
 }

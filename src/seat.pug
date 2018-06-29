@@ -1,0 +1,12 @@
+extends _template
+block body
+  section
+    .container-fluid.p-0
+      h1.py-3.text-center.mb-0.seat-title เลือกที่นั่ง
+      img(src="images/seat.png", alt="").img-fluid
+  .nav-tabs.navbar-nav.navbar-bottom.fixed-bottom
+    .text-center.py-3.d-flex.justify-content-around
+      .seat-selected J4,J5,VP1,VP2
+      .seat-price รวม 1,080 บาท
+    a(href='complete.html')  
+      .text-center.py-3.proceed-btn ดำเนินการต่อ

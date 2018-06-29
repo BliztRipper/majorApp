@@ -6456,8 +6456,7 @@ $('#movie-carousel').slick({
   dots: false,
   arrows: false,
   infinite: false,
-  speed: 300,
-  slidesToShow: 1,
+  speed: 100,
   centerMode: true,
   variableWidth: true,
 });
