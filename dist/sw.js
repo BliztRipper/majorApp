@@ -3,7 +3,6 @@ var filesToCache = [
   '/',
   'index.html',
   'style.css',
-  'slick.css',
   'main.js',
 ];
 self.addEventListener('install', function(e) {
