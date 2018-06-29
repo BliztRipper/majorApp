@@ -56,6 +56,40 @@ block body
         .card-body.d-flex.align-items-center
           img(src="images/Majorcineplexlogo.png", alt="" height='72')
           .card-title.pl-2 เมเจอร์ซีนีเพล็ก
+  #ticket-index.tabcontent(style='display:none;')
+    .container.pt-3
+        .row
+          .col-4
+            img(src="images/incredibles.jpg", alt="").img-fluid
+          .col-8
+            .ticket-movie__title Incredibles 2
+            .ticket-movie__subtitle รวมเหล่ายอดคนพิทักษ์โลก 2
+            .ticket-movie__genre Comedy
+            .ticket-movie__timelength 118 นาที
+        .row.py-2
+          .col-6
+           .ticket-movie__branchTitle สาขา    
+           .ticket-movie__branch ควอเทียร์ ซีเนอาร์ต
+          .col-6.d-flex.align-items-end.justify-content-around
+            a(href='').ticket-movie__map ดูแผนที่
+        .row.py-2
+          .col-6
+           .ticket-movie__dateTitle วันที่    
+           .ticket-movie__date 3 ก.ย.
+          .col-6
+            .ticket-movie__timeTitle เวลา
+            .ticket-movie__time 19:40
+        .row.py-2
+          .col-6
+           .ticket-movie__cinemaTitle โรงภาพยนต์    
+           .ticket-movie__cinema 3 
+          .col-6
+            .ticket-movie__seatTitle หมายเลขที่นั่ง
+            .ticket-movie__seat J4,J5,VP1,VP2
+        .row.py-2.border-top
+          .col-12
+            img(src="images/qr.png", alt="").d-block.mx-auto.h-50
+            .ticket-movie__code WJM28PZ        
   .nav-tabs.navbar-nav.navbar-bottom.fixed-bottom
     .row.text-center
       .col.py-2.d-flex.flex-column.tablinks#movie-tab(style='border-top: 3px solid #ff8200;'  onclick="navToggle(event, 'movie-index')")
@@ -64,7 +98,7 @@ block body
       .col.py-2.d-flex.flex-column.tablinks#cinema-tab(onclick="navToggle(event, 'cinema-index')")
         i.fas.fa-map-marker
         |โรงภาพยนต์ 
-      .col.py-2.d-flex.flex-column#ticket-tab
+      .col.py-2.d-flex.flex-column#ticket-tab(onclick="navToggle(event, 'ticket-index')")
         i.fas.fa-ticket-alt
         |ตั๋วหนัง
 

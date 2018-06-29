@@ -80,11 +80,56 @@
             <div class="card-title pl-2">เมเจอร์ซีนีเพล็ก</div>
           </div>
         </div></a></div>
+    <div class="tabcontent" id="ticket-index" style="display:none;">
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-4"><img class="img-fluid" src="images/incredibles.jpg" alt=""/></div>
+          <div class="col-8">
+            <div class="ticket-movie__title">Incredibles 2</div>
+            <div class="ticket-movie__subtitle">รวมเหล่ายอดคนพิทักษ์โลก 2</div>
+            <div class="ticket-movie__genre">Comedy</div>
+            <div class="ticket-movie__timelength">118 นาที</div>
+          </div>
+        </div>
+        <div class="row py-2">
+          <div class="col-6">
+            <div class="ticket-movie__branchTitle">สาขา    </div>
+            <div class="ticket-movie__branch">ควอเทียร์ ซีเนอาร์ต</div>
+          </div>
+          <div class="col-6 d-flex align-items-end justify-content-around"><a class="ticket-movie__map" href="">ดูแผนที่</a></div>
+        </div>
+        <div class="row py-2">
+          <div class="col-6">
+            <div class="ticket-movie__dateTitle">วันที่    </div>
+            <div class="ticket-movie__date">3 ก.ย.</div>
+          </div>
+          <div class="col-6">
+            <div class="ticket-movie__timeTitle">เวลา</div>
+            <div class="ticket-movie__time">19:40</div>
+          </div>
+        </div>
+        <div class="row py-2">
+          <div class="col-6">
+            <div class="ticket-movie__cinemaTitle">โรงภาพยนต์    </div>
+            <div class="ticket-movie__cinema">3 </div>
+          </div>
+          <div class="col-6">
+            <div class="ticket-movie__seatTitle">หมายเลขที่นั่ง</div>
+            <div class="ticket-movie__seat">J4,J5,VP1,VP2</div>
+          </div>
+        </div>
+        <div class="row py-2 border-top">
+          <div class="col-12"><img class="d-block mx-auto h-50" src="images/qr.png" alt=""/>
+            <div class="ticket-movie__code">WJM28PZ        </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="nav-tabs navbar-nav navbar-bottom fixed-bottom">
       <div class="row text-center">
         <div class="col py-2 d-flex flex-column tablinks" id="movie-tab" style="border-top: 3px solid #ff8200;" onclick="navToggle(event, 'movie-index')"><i class="fas fa-film"></i>ภาพยนต์</div>
         <div class="col py-2 d-flex flex-column tablinks" id="cinema-tab" onclick="navToggle(event, 'cinema-index')"><i class="fas fa-map-marker"></i>โรงภาพยนต์ </div>
-        <div class="col py-2 d-flex flex-column" id="ticket-tab"><i class="fas fa-ticket-alt"></i>ตั๋วหนัง</div>
+        <div class="col py-2 d-flex flex-column" id="ticket-tab" onclick="navToggle(event, 'ticket-index')"><i class="fas fa-ticket-alt"></i>ตั๋วหนัง</div>
       </div>
     </div>
     <script src="main.js" async="async"></script>
