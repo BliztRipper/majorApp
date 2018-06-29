@@ -12,8 +12,8 @@ $('#movie-carousel').slick({
 });
 
 $(document).ready(function(){
-  $('.col.py-2.d-flex.flex-column').click(function(e){
-    $('.col.py-2.d-flex.flex-column').css("border-top","")
+  $('.bottom-navtab').click(function(e){
+    $('.bottom-navtab').css("border-top","")
     $(this).css({'border-top': '3px solid #ff8200'})
   })
 })

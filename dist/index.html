@@ -24,7 +24,10 @@
   <body>
     <div class="tabcontent" id="movie-index">
       <header>
-        <div class="container d-flex justify-content-center p-4"></div>
+        <div class="container d-flex justify-content-center p-4"><a href="">
+            <button class="btn btn-outline-dark px-4">
+              <div class="sprite-table"></div>ดูภาพยนต์ทั้งหมด
+            </button></a></div>
       </header>
       <div id="movie-carousel">
         <figure>
@@ -124,9 +127,15 @@
     </div>
     <div class="nav-tabs navbar-nav navbar-bottom fixed-bottom">
       <div class="row text-center">
-        <div class="col py-2 d-flex flex-column tablinks" id="movie-tab" style="border-top: 3px solid #ff8200;" onclick="navToggle(event, 'movie-index')"><i class="fas fa-film"></i>ภาพยนต์</div>
-        <div class="col py-2 d-flex flex-column tablinks" id="cinema-tab" onclick="navToggle(event, 'cinema-index')"><i class="fas fa-map-marker"></i>โรงภาพยนต์ </div>
-        <div class="col py-2 d-flex flex-column" id="ticket-tab" onclick="navToggle(event, 'ticket-index')"><i class="fas fa-ticket-alt"></i>ตั๋วหนัง</div>
+        <div class="col py-2 d-flex flex-column tablinks align-items-center bottom-navtab" id="movie-tab" style="border-top: 3px solid #ff8200;" onclick="navToggle(event, 'movie-index')">
+          <div class="sprite-movie"> </div>ภาพยนต์
+        </div>
+        <div class="col py-2 d-flex flex-column tablinks align-items-center bottom-navtab" id="cinema-tab" onclick="navToggle(event, 'cinema-index')">
+          <div class="sprite-cinema"> </div>โรงภาพยนต์ 
+        </div>
+        <div class="col py-2 d-flex flex-column tablinks align-items-center bottom-navtab" id="ticket-tab" onclick="navToggle(event, 'ticket-index')">
+          <div class="sprite-ticket"></div>ตั๋วหนัง
+        </div>
       </div>
     </div>
     <script src="main.js" async="async"></script>

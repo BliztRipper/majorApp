@@ -3,10 +3,10 @@ block body
   #movie-index.tabcontent
     header
       .container.d-flex.justify-content-center.p-4
-        //- a(href='')
-        //-   button.btn.btn-outline-dark.px-4
-        //-     i.fas.fa-th(style='color:#b0b5b9; margin-right:1rem;') 
-        //-     |ดูภาพยนต์ทั้งหมด
+        a(href='')
+          button.btn.btn-outline-dark.px-4
+            .sprite-table
+            |ดูภาพยนต์ทั้งหมด
     #movie-carousel
       figure
         .container
@@ -92,14 +92,14 @@ block body
             .ticket-movie__code WJM28PZ        
   .nav-tabs.navbar-nav.navbar-bottom.fixed-bottom
     .row.text-center
-      .col.py-2.d-flex.flex-column.tablinks#movie-tab(style='border-top: 3px solid #ff8200;'  onclick="navToggle(event, 'movie-index')")
-        i.fas.fa-film
+      .col.py-2.d-flex.flex-column.tablinks.align-items-center.bottom-navtab#movie-tab(style='border-top: 3px solid #ff8200;'  onclick="navToggle(event, 'movie-index')")
+        .sprite-movie 
         |ภาพยนต์
-      .col.py-2.d-flex.flex-column.tablinks#cinema-tab(onclick="navToggle(event, 'cinema-index')")
-        i.fas.fa-map-marker
+      .col.py-2.d-flex.flex-column.tablinks.align-items-center.bottom-navtab#cinema-tab(onclick="navToggle(event, 'cinema-index')")
+        .sprite-cinema 
         |โรงภาพยนต์ 
-      .col.py-2.d-flex.flex-column#ticket-tab(onclick="navToggle(event, 'ticket-index')")
-        i.fas.fa-ticket-alt
+      .col.py-2.d-flex.flex-column.tablinks.align-items-center.bottom-navtab#ticket-tab(onclick="navToggle(event, 'ticket-index')")
+        .sprite-ticket
         |ตั๋วหนัง
 
 
