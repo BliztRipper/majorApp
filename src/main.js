@@ -6,9 +6,10 @@ $('#movie-carousel').slick({
   dots: false,
   arrows: false,
   infinite: false,
-  speed: 100,
+  speed: 200,
   centerMode: true,
-  variableWidth: true,
+  lazyLoad: 'ondemand',
+  slidesToScroll: 1
 });
 
 $(document).ready(function(){
