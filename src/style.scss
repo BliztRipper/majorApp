@@ -75,3 +75,32 @@ body{
   font-weight: bold;
   color:#000;
 }
+#ticket{
+  background-color: #fff;
+}
+
+.ticket-movie{
+  &__title{
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  &__subtitle{
+    font-weight: bold;
+  }
+  &__genre,&__timelength{
+    color:#9ca4ab;
+    font-size: 0.875rem;
+  }
+  &__branchTitle,&__dateTitle,&__timeTitle,&__cinemaTitle,&__seatTitle{
+    color:#9ca4ab;
+    font-size: 0.75rem;
+  }
+  &__map{
+    font-size: 0.875rem;
+    color:#ff8200;
+  }
+  &__code{
+    color:#ff8200;
+    text-align: center;
+  }
+}
