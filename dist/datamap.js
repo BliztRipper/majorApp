@@ -8,10 +8,9 @@ const movieData = 'http://cinema.truemoney.net/MovieList';
     const allmovie = document.getElementById('allmovie');
     let comingsoonList = `
     <div class="allmovie__cell">
-      <img class="mx-auto d-block" src="${getComingSoon_data[i].poster_ori}">
+      <img class="mx-auto d-block lazy" src="${getComingSoon_data[i].poster_ori}">
       <h6 class="allmovie__cell__name text-center">${getComingSoon_data[i].title_th}</h6>
     </div>`
     allmovie.innerHTML += comingsoonList
   }
-
 })(); 

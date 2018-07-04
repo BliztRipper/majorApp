@@ -10,7 +10,6 @@ $(document).ready(function(){
   
 })
 
-
 function navToggle(evt, mainTab) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
