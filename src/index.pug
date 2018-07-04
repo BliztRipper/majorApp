@@ -1,6 +1,6 @@
 extends _template
+block page
 block body
-  -var page = 'index';
   #movie-index.tabcontent
     header
       .container.d-flex.justify-content-center.p-4
@@ -8,7 +8,7 @@ block body
           button.btn.btn-outline-dark.px-4
             .sprite-table
             |ดูภาพยนต์ทั้งหมด
-    #movie-carousel
+    #movie-carousel 
       figure
         .container
           img(src="images/incredibles.jpg", alt="The incredibles 2").d-block.mx-auto.poster

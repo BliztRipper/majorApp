@@ -23,12 +23,14 @@ html(lang="en")
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name='mobile-web-app-capable', content='yes')
   body
+    block page
+      -var index == 'home';
     block body
     block script
-      script(src="main.js")
-      if page = 'index' 
+      script(src="main.js") 
+      if index == 'home' 
         script(src='data_carousel.js')
-      else if page = 'comingsoon'
+      else if  index == 'comingsoon'
         script(src='datamap.js')
       script.
         if('serviceWorker' in navigator) {
