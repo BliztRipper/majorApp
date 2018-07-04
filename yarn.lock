@@ -2,23 +2,13 @@
 # yarn lockfile v1
 
 
-"@glidejs/glide@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@glidejs/glide/-/glide-3.1.0.tgz#6b69df4e5a79acda76af863877c8d776ba79fa66"
-
 bootstrap@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.1.tgz#3aec85000fa619085da8d2e4983dfd67cf2114cb"
 
-jquery@>=1.8.3, jquery@^3.3.1:
+jquery@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
-
-owl.carousel@^2.3.4:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/owl.carousel/-/owl.carousel-2.3.4.tgz#6c53dc8d24304b790e4f27a1dc4a655e973ccdc9"
-  dependencies:
-    jquery ">=1.8.3"
 
 slick-carousel@^1.8.1:
   version "1.8.1"
