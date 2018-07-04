@@ -20,10 +20,16 @@ html(lang="en")
     meta(property='og:description', content='All Movie is in your hand')
     meta(property='og:title', content='TMN Movie App')
     meta(property='og:image', content='og-image.jpg')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='mobile-web-app-capable', content='yes')
   body
     block body
     block script
-      script(src="main.js" async)
+      script(src="main.js")
+      if page = 'index' 
+        script(src='data_carousel.js')
+      else if page = 'comingsoon'
+        script(src='datamap.js')
       script.
         if('serviceWorker' in navigator) {
         navigator.serviceWorker.register('sw.js')

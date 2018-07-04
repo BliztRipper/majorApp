@@ -20,6 +20,8 @@
     <meta property="og:description" content="All Movie is in your hand"/>
     <meta property="og:title" content="TMN Movie App"/>
     <meta property="og:image" content="og-image.jpg"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
   </head>
   <body>
     <section>
@@ -34,7 +36,8 @@
       </div><a href="complete.html"> 
         <div class="text-center py-3 proceed-btn">ดำเนินการต่อ</div></a>
     </div>
-    <script src="main.js" async="async"></script>
+    <script src="main.js"></script>
+    <script src="data_carousel.js"></script>
     <script>
       if('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js')
