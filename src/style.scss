@@ -84,7 +84,8 @@ body{
 }
 
 .poster{
-  height: 320px;
+  max-width: 100%;
+  height: auto;
 }
 
 .movie-detail{
@@ -165,7 +166,8 @@ body{
   }
   &__cell{
     img{
-      height: 100px;
+      max-width: 100%;
+      height: auto;
     }
     &__name{
       text-align: center;

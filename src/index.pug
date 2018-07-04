@@ -1,5 +1,6 @@
 extends _template
 block page
+  -var index = 'home'
 block body
   #movie-index.tabcontent
     header
@@ -8,39 +9,39 @@ block body
           button.btn.btn-outline-dark.px-4
             .sprite-table
             |ดูภาพยนต์ทั้งหมด
-    #movie-carousel 
-      figure
-        .container
-          img(src="images/incredibles.jpg", alt="The incredibles 2").d-block.mx-auto.poster
-          .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
-            a.btn.booking-btn(href='showing-time.html') ซื้อตั๋ว
-            h2.pt-2.movie-detail__title  Incredibles 2
-            h5.movie-detail__sec-title  รวมเหล่ายอดคนพิทักษ์โลก 2
-            span.movie-detail__genre  Comedy                   
-      figure
-        .container
-          img(src="images/jurassic-world-2-poster.jpg", alt="jurassic world 2").d-block.mx-auto.poster
-          .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
-            a.btn.booking-btn(href='showing-time.html') ซื้อตั๋ว   
-            h2.pt-2.movie-detail__title Jurassic World 2
-            h5.movie-detail__sec-title จูราสสิค เวิลด์ 2 อาณาจักรล่มสลาย
-            span.movie-detail__genre Action                   
-      figure
-        .container
-          img(src="images/wir2.jpg", alt="wreck it ralph 2").d-block.mx-auto.poster
-          .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
-            a.btn.booking-btn(href='showing-time.html') ซื้อตั๋ว                    
-            h2.pt-2.movie-detail__title WRECK IT RALPH 2
-            h5.movie-detail__sec-title.text-center วายร้ายหัวใจฮีโร่ 2 ราล์ฟตะลุยโลกอินเตอร์เน็ต
-            span.movie-detail__genre Comedy 
-      figure
-        .container
-          img(src="images/prauma.jpg", alt="เพรชพระอุมา").d-block.mx-auto.poster
-          .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
-            a.btn.booking-btn(href='showing-time.html') ซื้อตั๋ว
-            h2.pt-2.movie-detail__title Petch Pra Uma
-            h5.movie-detail__sec-title เพชรพระอุมา
-            span.movie-detail__genre Action, Adventure            
+    #movie-carousel
+      //- figure
+      //-   .container
+      //-     img(src="images/incredibles.jpg", alt="The incredibles 2").d-block.mx-auto.poster
+      //-     .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
+      //-       a.btn.booking-btn(href='showing-time.html') ซื้อตั๋ว
+      //-       h2.pt-2.movie-detail__title  Incredibles 2
+      //-       h5.movie-detail__sec-title  รวมเหล่ายอดคนพิทักษ์โลก 2
+      //-       span.movie-detail__genre  Comedy                   
+      //- figure
+      //-   .container
+      //-     img(src="images/jurassic-world-2-poster.jpg", alt="jurassic world 2").d-block.mx-auto.poster
+      //-     .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
+      //-       a.btn.booking-btn(href='showing-time.html') ซื้อตั๋ว   
+      //-       h2.pt-2.movie-detail__title Jurassic World 2
+      //-       h5.movie-detail__sec-title จูราสสิค เวิลด์ 2 อาณาจักรล่มสลาย
+      //-       span.movie-detail__genre Action                   
+      //- figure
+      //-   .container
+      //-     img(src="images/wir2.jpg", alt="wreck it ralph 2").d-block.mx-auto.poster
+      //-     .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
+      //-       a.btn.booking-btn(href='showing-time.html') ซื้อตั๋ว                    
+      //-       h2.pt-2.movie-detail__title WRECK IT RALPH 2
+      //-       h5.movie-detail__sec-title.text-center วายร้ายหัวใจฮีโร่ 2 ราล์ฟตะลุยโลกอินเตอร์เน็ต
+      //-       span.movie-detail__genre Comedy 
+      //- figure
+      //-   .container
+      //-     img(src="images/prauma.jpg", alt="เพรชพระอุมา").d-block.mx-auto.poster
+      //-     .d-flex.justify-content-center.align-items-center.flex-column.movie-detail
+      //-       a.btn.booking-btn(href='showing-time.html') ซื้อตั๋ว
+      //-       h2.pt-2.movie-detail__title Petch Pra Uma
+      //-       h5.movie-detail__sec-title เพชรพระอุมา
+      //-       span.movie-detail__genre Action, Adventure            
   #cinema-index.tabcontent(style='display:none;')
     a(href='')
       .card

@@ -27,11 +27,11 @@ html(lang="en")
       -var index == 'home';
     block body
     block script
-      script(src="main.js") 
+      script(src="main.js" async) 
       if index == 'home' 
-        script(src='data_carousel.js')
+        script(src='data_carousel.js' async)
       else if  index == 'comingsoon'
-        script(src='datamap.js')
+        script(src='datamap.js' async)
       script.
         if('serviceWorker' in navigator) {
         navigator.serviceWorker.register('sw.js')
