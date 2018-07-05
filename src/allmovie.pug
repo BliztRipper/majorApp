@@ -4,5 +4,14 @@ block page
 block body
   section
     .container.mt-4
-      h1.allmovie__title กำลังฉาย
-      #allmovie.allmovie 
+      ul.nav.nav-tabs.d-flex.justify-content-around.border-0(role='tablist')
+        li.nav-item
+          a.nav-link#nowshowing-tab(data-toggle='tab' href='#nowshowing-list' role='tab' aria-control='nowshowing-list' aria-selected='true') กำลังฉาย
+        li.nav-item
+          a.nav-link#comingsoon-tab(data-toggle='tab' href='#comingsoon-list' role='tab' aria-control='comingsoon-list' aria-selected='false') เร็วๆนี้
+      .tab-content
+        #nowshowing-list.tab-pane.fade.show.active.allmovie(role='tabpanel' aria-labelledby='nowshowing-tab')
+        #comingsoon-list.tab-pane.fade.allmovie(role='tabpanel' aria-labelledby='comingsoon-tab')
+        #loading
+          img(src="Spinner.gif", alt="")
+          

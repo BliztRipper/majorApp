@@ -2,6 +2,7 @@
 //@prepros-prepend ../node_modules/bootstrap/dist/js/bootstrap.bundle.js
 //@prepros-prepend ../node_modules/slick-carousel/slick/slick.min.js
 
+
 $(document).ready(function(){
   $('.bottom-navtab').click(function(e){
     $('.bottom-navtab').css("border-top","")
