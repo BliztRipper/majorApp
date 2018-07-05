@@ -1,16 +1,17 @@
 //@prepros-prepend ../node_modules/jquery/dist/jquery.min.js
 //@prepros-prepend ../node_modules/bootstrap/dist/js/bootstrap.bundle.js
 //@prepros-prepend ../node_modules/slick-carousel/slick/slick.min.js
-
+//@prepros-prepend ../node_modules/jquery-lazy/jquery.lazy.min.js
+//@prepros-prepend ../node_modules/jquery-lazy/jquery.lazy.plugins.min.js
 
 $(document).ready(function(){
-  $('.bottom-navtab').click(function(e){
-    $('.bottom-navtab').css("border-top","")
-    $(this).css({'border-top': '3px solid #ff8200'})
+    $('.bottom-navtab').click(function(e){
+      $('.bottom-navtab').css("border-top","")
+      $(this).css({'border-top': '3px solid #ff8200'})
+    })
+    
   })
   
-})
-
 function navToggle(evt, mainTab) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");

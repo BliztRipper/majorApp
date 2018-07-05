@@ -29,7 +29,13 @@ is-buffer@^1.1.5:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
 
-jquery@^3.3.1:
+jquery-lazy@^1.7.9:
+  version "1.7.9"
+  resolved "https://registry.yarnpkg.com/jquery-lazy/-/jquery-lazy-1.7.9.tgz#5a7c8691664b6ec4c53220298ace28c9f2927ffd"
+  dependencies:
+    jquery ">=1.7.2"
+
+jquery@>=1.7.2, jquery@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
 
