@@ -32,6 +32,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
     }
     let loading = document.getElementById('loading');
     loading.parentNode.removeChild(loading);
+    
   } catch (error) {
     console.error(error);
   }
